@@ -1,0 +1,22 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <radialGradient id="pothole3" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#141516"/>
+      <stop offset="0.72" stop-color="#242628"/>
+      <stop offset="1" stop-color="#484B4E"/>
+    </radialGradient>
+    <filter id="grain3">
+      <feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="2" seed="11"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+      <feComposite operator="over" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect width="800" height="600" fill="#6E7174" filter="url(#grain3)"/>
+  <path d="M400 0 L400 600" stroke="#CFCF86" stroke-width="10" stroke-dasharray="48 30" opacity="0.68"/>
+  <ellipse cx="310" cy="310" rx="92" ry="66" fill="url(#pothole3)"/>
+  <path d="M222 286 C238 252 274 250 286 264 C302 298 282 340 246 352 C218 360 204 330 222 286Z" fill="#1A1C1E" opacity="0.9"/>
+  <path d="M348 274 C382 276 390 306 372 330 C356 352 326 356 312 342" fill="none" stroke="#0F1012" stroke-width="7" opacity="0.9"/>
+  <ellipse cx="310" cy="314" rx="42" ry="28" fill="#0A0B0C" opacity="0.92"/>
+  <path d="M540 128 C620 164 594 238 520 248 C460 256 422 204 470 166 C504 140 512 116 540 128Z" fill="none" stroke="#2C2E30" stroke-width="6" opacity="0.72"/>
+  <ellipse cx="568" cy="496" rx="48" ry="30" fill="#343638" opacity="0.7"/>
+</svg>

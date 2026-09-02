@@ -1,0 +1,21 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="asphalt1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7A7D80"/>
+      <stop offset="1" stop-color="#5D6063"/>
+    </linearGradient>
+    <filter id="noise1">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.16 0"/>
+      <feComposite operator="over" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#asphalt1)" filter="url(#noise1)"/>
+  <path d="M400 0 L400 600" stroke="#C9C87A" stroke-width="10" stroke-dasharray="48 30" opacity="0.72"/>
+  <path d="M120 0 L120 600 M680 0 L680 600" stroke="#E8E8E8" stroke-width="4" opacity="0.22"/>
+  <path d="M185 96 C300 132 260 210 185 244 C130 268 320 310 278 366 C248 404 140 412 212 478 C270 532 190 556 178 600" fill="none" stroke="#232426" stroke-width="7" stroke-linecap="round" opacity="0.85"/>
+  <path d="M200 112 C290 142 270 196 205 226" fill="none" stroke="#111213" stroke-width="2" opacity="0.7"/>
+  <path d="M490 380 C540 404 510 450 470 436" fill="none" stroke="#202224" stroke-width="5" opacity="0.8"/>
+  <ellipse cx="540" cy="216" rx="34" ry="18" fill="#3A3C3E" opacity="0.75"/>
+  <ellipse cx="540" cy="216" rx="24" ry="11" fill="#26282A" opacity="0.85"/>
+</svg>

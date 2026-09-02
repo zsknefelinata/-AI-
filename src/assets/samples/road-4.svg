@@ -1,0 +1,26 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="asphalt4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#75787B"/>
+      <stop offset="1" stop-color="#5A5D60"/>
+    </linearGradient>
+    <filter id="grain4">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" seed="17"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.16 0"/>
+      <feComposite operator="over" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#asphalt4)" filter="url(#grain4)"/>
+  <path d="M400 0 L400 600" stroke="#C9C87A" stroke-width="8" stroke-dasharray="40 26" opacity="0.55"/>
+  <g fill="none" stroke="#191A1C" stroke-width="5" stroke-linejoin="round" opacity="0.9">
+    <path d="M300 180 L370 196 L416 260 L472 238 L520 280 L468 344 L508 408 L440 392 L390 456 L344 408 L280 430 L318 360 L266 300 L322 278 L300 180Z"/>
+    <path d="M370 196 L344 246 L404 280 L472 238"/>
+    <path d="M390 456 L420 500 L470 472 L508 408"/>
+    <path d="M266 300 L224 356 L318 360"/>
+  </g>
+  <g fill="none" stroke="#101113" stroke-width="2" opacity="0.7">
+    <path d="M404 280 L420 334L440 392"/>
+    <path d="M416 260 L452 320 L468 344"/>
+  </g>
+  <ellipse cx="590" cy="150" rx="44" ry="30" fill="#2E3033" opacity="0.7"/>
+</svg>
