@@ -220,7 +220,7 @@ onMounted(async () => {
                 v-if="row.status === 'generating'"
                 :percentage="row.progress"
                 :stroke-width="6"
-                status="active"
+                :indeterminate="true"
               />
               <span v-else class="progress-text">{{ row.status === 'done' ? '100%' : row.status === 'failed' ? '失败' : '排队中' }}</span>
             </template>
